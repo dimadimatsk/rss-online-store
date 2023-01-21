@@ -9,3 +9,8 @@ export interface ICategory {
   img: string;
   title: string;
 }
+
+export interface IProduct {
+  id: number;
+  img: string;
+}

@@ -34,3 +34,18 @@ export const categories = [
   // { id: 9, img: 9, title: 'T-Shirts' },
   // { id: 10, img: 10, title: 'Trouses' },
 ];
+
+export const products = [
+  { id: 0, img: require('./assets/products/0.jpg') },
+  { id: 1, img: require('./assets/products/1.jpg') },
+  { id: 2, img: require('./assets/products/2.jpg') },
+  { id: 3, img: require('./assets/products/3.jpg') },
+  { id: 4, img: require('./assets/products/4.jpg') },
+  { id: 5, img: require('./assets/products/5.jpg') },
+  { id: 6, img: require('./assets/products/6.jpg') },
+  { id: 7, img: require('./assets/products/7.jpg') },
+  { id: 8, img: require('./assets/products/8.jpg') },
+  { id: 9, img: require('./assets/products/9.jpg') },
+  // { id: 10, img: require('./assets/products/10.jpg') },
+  // { id: 11, img: require('./assets/products/11.jpg') },
+];
