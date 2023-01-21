@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Slide.module.scss';
-import { ISlide } from '../../types/data';
+import { ISlide } from '../../types';
 
 export const Slide: React.FC<ISlide> = (props) => {
   return (
@@ -8,7 +8,7 @@ export const Slide: React.FC<ISlide> = (props) => {
       <div
         className={style.image}
         style={{
-          backgroundImage: `url(${require(`../../assets/${props.img}.jpg`)})`,
+          backgroundImage: `url(${props.img})`,
         }}
       >
         <div className={style.infoContainer}>

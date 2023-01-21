@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import style from './Slider.module.scss';
 import { ArrowBackIosOutlined, ArrowForwardIosOutlined } from '@material-ui/icons';
 import { Slide } from '../Slide/Slide';
-import { slides } from '../../slides';
+import { slides } from '../../data';
 
 export const Slider: React.FC = () => {
   const [slideIndex, setSlideIndex] = useState<number>(0);
@@ -29,8 +29,8 @@ export const Slider: React.FC = () => {
         <ArrowBackIosOutlined style={{ color: 'white' }} />
       </div>
       <div className={style.wrapper} style={{ transform: `translateX(${slideIndex * -100}vw)` }}>
-        {slides.map((slide) =>
-          <Slide {...slide} />
+        {slides.map((slide, index) =>
+          <Slide key={index} {...slide} />
         )}
       </div>
       <div className={`${style.arrow} ${style.right}`} onClick={(): void => changeSlide('right')}>
