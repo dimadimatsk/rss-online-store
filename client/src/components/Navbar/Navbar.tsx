@@ -20,7 +20,7 @@ export const Navbar: FC = () => {
           </div>
         </div>
         <div className={style.center}>
-          <h1 className={style.logo}>SHOP</h1>
+          <h1 className={style.logo}>SHOP.</h1>
         </div>
         <div className={style.right}>
           <div className={style.item}>

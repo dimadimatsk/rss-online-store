@@ -1,0 +1,135 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 80px 112px 0px 112px;
+  justify-content: space-between;
+  height: 32vh;
+  background-color: rgb(243, 243, 243);
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(50% - 12px);
+
+    .title {
+      margin: 0px 0px 16px;
+      height: auto;
+      font-size: 20px;
+      letter-spacing: 2px;
+      line-height: 28px;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-align: left;
+    }
+
+    .subtitle {
+      text-align: left;
+      width: 300px;
+      height: 44px;
+      color: rgb(26, 26, 26);
+      font-size: 1rem;
+      letter-spacing: 0.02rem;
+      line-height: 22px;
+      font-weight: 400;
+      text-transform: none;
+    }
+  }
+
+  .emailContainer {
+    width: calc(50% - 12px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    .emailTitle {
+      display: block;
+      height: 15px;
+      color: rgb(26, 26, 26);
+      font-size: 0.857143rem;
+      letter-spacing: 0.0857143rem;
+      line-height: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .inputContainer {
+      display: inline-block;
+      width: 100%;
+
+      .input {
+        position: relative;
+        display: inline-block;
+        box-sizing: border-box;
+        width: calc(100% - 137px);
+        max-width: 359px;
+        margin: 0px;
+        padding: 8px 0px;
+        color: rgb(26, 26, 26);
+        font-size: 1.28571rem;
+        letter-spacing: 0.0257143rem;
+        line-height: 26px;
+        font-weight: 400;
+        text-transform: none;
+        border-width: 0px 0px 1px;
+        border-top-style: initial;
+        border-right-style: initial;
+        border-left-style: initial;
+        border-top-color: initial;
+        border-right-color: initial;
+        border-left-color: initial;
+        border-image: initial;
+        border-bottom-style: solid;
+        border-bottom-color: rgb(221, 221, 221);
+        border-radius: 0px;
+        background-color: rgb(243, 243, 243);
+        outline-style: none;
+        appearance: none;
+        margin-right: 24px;
+
+        &::placeholder {
+          font-size: 16px;
+        }
+      }
+
+      .btn {
+        display: inline-block;
+        width: 113px;
+        padding: 0px;
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        line-height: 22px;
+        font-weight: 600;
+        text-transform: uppercase;
+        outline-style: none;
+        border-style: none;
+        height: 44px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        margin-top: 16px;
+        cursor: pointer;
+      }
+
+      .disabled {
+        background-color: white;
+        color: rgb(153, 153, 153);
+      }
+    }
+
+    .social {
+      padding: 40px 0px 56px;
+      display: flex;
+      flex-wrap: wrap;
+
+      .icon {
+        margin-right: 24px;
+        cursor: pointer;
+      }
+    }
+  }
+}
