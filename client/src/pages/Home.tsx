@@ -1,5 +1,6 @@
 import React from 'react';
 import { Categories } from '../components/Categories/Categories';
+import { Footer } from '../components/Footer/Footer';
 import { Mailing } from '../components/Mailing/Mailing';
 import { Navbar } from '../components/Navbar/Navbar';
 import { Products } from '../components/Products/Products';
@@ -13,6 +14,7 @@ export const Home: React.FC = () => {
       <Categories />
       <Products />
       <Mailing />
+      <Footer />
     </>
   );
 };
