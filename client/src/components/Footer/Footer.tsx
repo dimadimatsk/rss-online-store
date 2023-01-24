@@ -15,7 +15,11 @@ export const Footer: React.FC = () => {
           <a href="tel:+8 800 555 35 35" className={style.contactItem}>
             <Phone style={{ marginRight: '5px' }} /> +8 800 555 35 35
           </a>
-          <a href="mailto:contact@example.com" className={style.contactItem}>
+          <a
+            href="mailto:contact@example.com"
+            className={style.contactItem}
+            style={{ marginBottom: '0px' }}
+          >
             <MailOutline style={{ marginRight: '5px' }} />
             contact@example.com
           </a>
