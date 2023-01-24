@@ -5,37 +5,22 @@ import {
   SearchOutlined,
   ShoppingCartOutlined,
 } from '@material-ui/icons';
-import React, { FC, useState } from 'react';
+import React from 'react';
 import style from './Navbar.module.scss';
 
-export const Navbar: FC = () => {
-  const [hovered, setHovered] = useState<boolean>(false);
+export const Navbar: React.FC = () => {
   const categories = ['clothing', 'footwear', 'accessories', 'lifestyle', 'gifts', 'sale'];
-
-  const handleMouseEnter = () => {
-    setHovered(true);
-    console.log('q');
-  };
-
-  const handleMouseLeave = () => {
-    setHovered(false);
-    console.log('lv');
-  };
 
   return (
     <div className={style.container}>
       <div className={style.wrapper}>
         <div className={style.left}>
-          {/* <div className={style.searchContainer}>
-            <input className={style.input} />
-            <SearchOutlined style={{ opacity: 0.5, fontSize: '16px' }} />
-          </div> */}
           <div className={style.item}>
             <PersonOutlineOutlined />
           </div>
         </div>
         <div className={style.center}>
-          <h1 className={style.logo}>SHOP.</h1>
+          <h1 className={style.logo}>SHOP</h1>
         </div>
         <div className={style.right}>
           <div className={style.item}>
@@ -53,12 +38,7 @@ export const Navbar: FC = () => {
       </div>
       <div className={style.catsContainer}>
         {categories.map((category, index) => (
-          <span
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            key={index}
-            className={style.category}
-          >
+          <span key={index} className={style.category}>
             <a className={style.link} href="#">
               {category}
             </a>

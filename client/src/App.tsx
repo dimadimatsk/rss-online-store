@@ -1,10 +1,20 @@
 import React from 'react';
-import { Home } from './pages/Home';
-import { ItemsPage } from './pages/ItemsPage';
+import { Footer } from './components/Footer/Footer';
+import { Mailing } from './components/Mailing/Mailing';
+import { Navbar } from './components/Navbar/Navbar';
+import { Home } from './pages/Main';
+import { ItemsPage } from './pages/ProductsPage';
 
 function App() {
-  return <Home />;
-  // return <ItemsPage />;
+  // return <Home />;
+  return (
+    <>
+      <Navbar />
+      <ItemsPage />
+      <Mailing />
+      <Footer />
+    </>
+  );
 }
 
 export default App;

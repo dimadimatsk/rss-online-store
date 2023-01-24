@@ -3,14 +3,18 @@
   border-bottom: 1px solid rgb(235, 235, 235);
 
   .wrapper {
-    padding: 15px 20px;
+    position: relative;
+    margin: 15px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1376px;
+    
 
     .left {
+      position: absolute;
+      left: 0;
       display: flex;
-      flex: 1;
       align-items: center;
 
       .language {
@@ -32,7 +36,8 @@
     }
 
     .right {
-      flex: 1;
+      right: 0;
+      position: absolute;
       display: flex;
       align-items: center;
       justify-content: flex-end;
@@ -43,8 +48,8 @@
     }
 
     .center {
-      flex: 1;
       text-align: center;
+      margin: auto;
 
       .logo {
         font-family: 'Press Start 2P', cursive;

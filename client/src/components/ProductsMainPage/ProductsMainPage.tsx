@@ -1,6 +1,6 @@
 import React from 'react';
 import { products } from '../../data';
-import { ProductItem } from '../ProductItem/ProductItem';
+import { ProductItem } from '../ProductMainPage/ProductMainPage';
 import style from './Products.module.scss';
 
 export const Products: React.FC = () => {
