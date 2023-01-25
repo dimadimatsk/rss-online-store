@@ -29,7 +29,7 @@ export const Navbar: React.FC = () => {
           <div className={style.item}>
             <FavoriteBorderOutlined />
           </div>
-          <div className={style.item}>
+          <div className={`${style.item} ${style.last}`}>
             <Badge badgeContent={4} color="primary" overlap="rectangular">
               <ShoppingCartOutlined />
             </Badge>

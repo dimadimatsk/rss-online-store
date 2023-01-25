@@ -1,15 +1,14 @@
 .container {
-  height: 104px;
-  border-bottom: 1px solid rgb(235, 235, 235);
+  min-height: 56px;
+  padding: 20px 0 10px 0;
 
   .wrapper {
     position: relative;
-    margin: 15px auto;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1376px;
-    
 
     .left {
       position: absolute;
@@ -45,6 +44,10 @@
       .item {
         margin-left: 25px;
       }
+
+      .last {
+        margin-right: 12px;
+      }
     }
 
     .center {
@@ -65,17 +68,16 @@
     justify-content: center;
     height: 38px;
     background-color: rgb(255, 255, 255);
-    width: min-content;
-    margin: auto;
 
     .category {
       display: flex;
-      -webkit-box-pack: center;
       justify-content: center;
       -webkit-box-align: center;
       align-items: center;
       color: black;
+      opacity: 1;
       height: 100%;
+      cursor: pointer;
       transition: all 0.2s ease;
 
       .link {
@@ -85,7 +87,6 @@
         line-height: 20px;
         font-weight: 600;
         text-transform: uppercase;
-        color: inherit;
       }
     }
   }

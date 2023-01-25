@@ -5,6 +5,7 @@ export const container: string;
 export const input: string;
 export const item: string;
 export const language: string;
+export const last: string;
 export const left: string;
 export const link: string;
 export const logo: string;

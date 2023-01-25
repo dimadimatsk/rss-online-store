@@ -8,13 +8,13 @@ import { Slider } from '../components/Slider/Slider';
 
 export const Home: React.FC = () => {
   return (
-    <div>
+    <>
       <Navbar />
       <Slider />
       <Categories />
       <Products />
       <Mailing />
       <Footer />
-    </div>
+    </>
   );
 };

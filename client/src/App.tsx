@@ -6,15 +6,15 @@ import { Home } from './pages/Main';
 import { ItemsPage } from './pages/ProductsPage';
 
 function App() {
-  // return <Home />;
-  return (
-    <>
-      <Navbar />
-      <ItemsPage />
-      <Mailing />
-      <Footer />
-    </>
-  );
+  return <Home />;
+  // return (
+  //   <>
+  //     <Navbar />
+  //     <ItemsPage />
+  //     <Mailing />
+  //     <Footer />
+  //   </>
+  // );
 }
 
 export default App;

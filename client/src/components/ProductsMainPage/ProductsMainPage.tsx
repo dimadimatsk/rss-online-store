@@ -1,7 +1,7 @@
 import React from 'react';
 import { products } from '../../data';
 import { ProductItem } from '../ProductMainPage/ProductMainPage';
-import style from './Products.module.scss';
+import style from './ProductsMainPage.module.scss';
 
 export const Products: React.FC = () => {
   return (
