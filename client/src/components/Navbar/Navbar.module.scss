@@ -1,6 +1,7 @@
 .container {
   min-height: 56px;
   padding: 20px 0 10px 0;
+  width: 100%;
 
   .wrapper {
     position: relative;
@@ -68,6 +69,8 @@
     justify-content: center;
     height: 38px;
     background-color: rgb(255, 255, 255);
+    width: fit-content;
+    margin: auto;
 
     .category {
       display: flex;

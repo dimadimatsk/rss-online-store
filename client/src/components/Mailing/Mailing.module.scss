@@ -2,10 +2,11 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 80px 112px 0px 112px;
+  padding: 80px 112px 0 112px;
   justify-content: space-between;
   height: 32vh;
   background-color: rgb(243, 243, 243);
+  width: calc(100% - 224px);
 
   .info {
     display: flex;

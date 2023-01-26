@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+
+  .titleContainer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding-top: 8px;
+
+    .count {
+      font-size: 1rem;
+      letter-spacing: 0.02rem;
+      line-height: 22px;
+      font-weight: 600;
+      text-transform: none;
+      text-align: center;
+      color: rgb(26, 26, 26);
+    }
+  }
+
+  .itemsContainer {
+    display: grid;
+    gap: 32px 16px;
+    column-gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 16px;
+  }
+}

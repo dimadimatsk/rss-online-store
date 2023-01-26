@@ -4,7 +4,7 @@ import { Title } from '../components/Title/Title';
 
 export const ItemsPage = () => {
   return (
-    <div className="container">
+    <div className="wrapper">
       <Title />
       <ItemsBlock />
     </div>

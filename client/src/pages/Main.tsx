@@ -6,15 +6,14 @@ import { Navbar } from '../components/Navbar/Navbar';
 import { Products } from '../components/ProductsMainPage/ProductsMainPage';
 import { Slider } from '../components/Slider/Slider';
 
-export const Home: React.FC = () => {
+export const Main: React.FC = () => {
   return (
     <>
-      <Navbar />
       <Slider />
-      <Categories />
-      <Products />
-      <Mailing />
-      <Footer />
+      <div className="wrapper">
+        <Products />
+        <Categories />
+      </div>
     </>
   );
 };

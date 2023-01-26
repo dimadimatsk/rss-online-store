@@ -3,7 +3,7 @@ import React from 'react';
 import { IProduct } from '../../types';
 import style from './ProductMainPage.module.scss';
 
-export const ProductItem: React.FC<IProduct> = (props) => {
+export const ProductMainPage: React.FC<IProduct> = (props) => {
   return (
     <div className={style.container}>
       <img className={style.img} src={props.img} alt="" />
