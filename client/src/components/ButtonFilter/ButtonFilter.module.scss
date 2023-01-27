@@ -34,7 +34,7 @@
     border-bottom: 1px solid rgb(242, 242, 242);
     margin-bottom: 24px;
 
-    .brandsContainer {
+    .sizesContainer {
       overflow-y: scroll;
       display: grid;
       position: initial;
@@ -44,53 +44,31 @@
       max-height: 249px;
 
       &::-webkit-scrollbar {
-        width: 4px;
+        display: none;
       }
 
-      &::-webkit-scrollbar-track {
-        background: #f1f1f1;
-      }
-
-      /* Handle */
-      &::-webkit-scrollbar-thumb {
-        background: #888;
-      }
-
-      /* Handle on hover */
-      &::-webkit-scrollbar-thumb:hover {
-        background: #555;
-      }
-
-      .brandBody {
+      .sizeBody {
         height: auto;
-        grid-template-columns: 100%;
+        grid-template-columns: repeat(2, 1fr);
         margin-left: 0px;
         display: grid;
-        gap: 1px;
+        padding: 8px 0px;
+        gap: 8px;
         margin-bottom: 8px;
 
-        .brand {
+        .size {
+          border: 1px solid rgb(204, 204, 204);
           display: flex;
           align-items: center;
-          justify-content: left;
-          text-align: center;
-
-          &::before {
-            content: '';
-            width: 24px;
-            height: 16px;
-            display: flex;
-            -webkit-box-align: center;
-            align-items: center;
-            -webkit-box-pack: center;
-            justify-content: center;
-            background-repeat: no-repeat;
-            background-image: url('../../assets/icons/square.svg');
-          }
-
-          &.active::before {
-            background-image: url('../../assets/icons/blacksquare.svg');
-          }
+          justify-content: center;
+          box-sizing: border-box;
+          height: 32px;
+          font-size: 0.857143rem;
+          letter-spacing: 0.0171429rem;
+          line-height: 20px;
+          font-weight: 400;
+          text-transform: none;
+          cursor: pointer;
         }
       }
     }

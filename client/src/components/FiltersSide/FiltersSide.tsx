@@ -1,4 +1,5 @@
 import React from 'react';
+import { ButtonFilter } from '../ButtonFilter/ButtonFilter';
 import { CheckFilter } from '../CheckFilter/CheckFilter';
 import style from './FilterSide.module.scss';
 
@@ -7,6 +8,7 @@ export const FiltersSide: React.FC = () => {
     <div className={style.container}>
       <CheckFilter />
       <CheckFilter />
+      <ButtonFilter />
     </div>
   );
 };
