@@ -8,7 +8,7 @@ export const CheckFilter = () => {
       <div className={style.filterContainer}>
         <div className={style.brandsContainer}>
           <div className={style.brandBody}>
-            <div className={style.brand}>
+            <div className={`${style.brand} ${style.active}`}>
               <span>424</span>
             </div>
             <div className={style.brand}>

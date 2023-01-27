@@ -1,3 +1,4 @@
+export const active: string;
 export const brand: string;
 export const brandBody: string;
 export const brandsContainer: string;
