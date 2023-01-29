@@ -2,6 +2,7 @@ const User = require('../models/User');
 const bcrypt = require('bcrypt');
 const UserDto = require('../dtos/userDto');
 const tokenService = require('./tokenService');
+const errorHandler = require('../error/ErrorHandler');
 
 class AuthService {
   async register(username, email, password) {
@@ -9,11 +10,11 @@ class AuthService {
     const regMail = await User.findOne({ email });
 
     if (regUser) {
-      throw new Error(`user with ${username} exists`);
+      throw errorHandler.badRequest(`user with that username exists`);
     }
 
     if (regMail) {
-      throw new Error(`user with ${email} exists`);
+      throw errorHandler.badRequest(`user with that email exists`);
     }
 
     const hashPassword = await bcrypt.hash(password, 7);
