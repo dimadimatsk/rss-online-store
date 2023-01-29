@@ -13,6 +13,6 @@ module.exports = class ErrorHandler extends Error {
   }
 
   static unauthorized() {
-    return new ErrorHandler(401, 'Не авторизован');
+    return new ErrorHandler(401, 'unauthorized user');
   }
 };
