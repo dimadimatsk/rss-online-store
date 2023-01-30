@@ -15,4 +15,8 @@ module.exports = class ErrorHandler extends Error {
   static unauthorized() {
     return new ErrorHandler(401, 'unauthorized user');
   }
+
+  static wrongRole() {
+    return new ErrorHandler(403, 'no access');
+  }
 };
