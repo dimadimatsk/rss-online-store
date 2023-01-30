@@ -8,7 +8,7 @@ module.exports = async (req, res, next) => {
       return next(ErrorHandler.unauthorized());
     }
 
-    const userData = tokenService.validateAccessToken(token);
+    const userData = await tokenService.validateAccessToken(token);
     if (!userData) {
       return next(ErrorHandler.unauthorized());
     }
