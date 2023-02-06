@@ -49,6 +49,7 @@ class ProductController {
       next(error);
     }
   }
+  
   async getAllProducts(req, res, next) {
     try {
       const queryCategory = req.query.category;

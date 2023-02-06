@@ -13,9 +13,13 @@ const OrderSchema = new mongoose.Schema(
         },
       },
     ],
-    amount: { type: Number, required: true },
+    bill: { type: Number, required: true, default: 0 },
     address: { type: Object, required: true },
-    status: { type: String, default: 'pending' },
+    status: {
+      type: String,
+      default: 'pending',
+      enum: ['pending', 'shipped', 'delivered', 'cancelled'],
+    },
   },
   { timestamps: true }
 );

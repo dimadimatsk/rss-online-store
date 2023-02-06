@@ -1,5 +1,4 @@
 const Product = require('../models/Product');
-const errorHandler = require('../error/ErrorHandler');
 
 class ProductService {
   async create(title, desc, img, categories, size, price) {
