@@ -1,8 +1,19 @@
 const Product = require('../models/Product');
 
 class ProductService {
-  async create(title, desc, img, categories, size, price) {
-    const product = new Product({ title, desc, img, categories, size, price });
+  async create(id, title, brand, desc, chars, img, category, sex, size, price) {
+    const product = new Product({
+      id,
+      title,
+      brand,
+      desc,
+      chars,
+      img,
+      category,
+      sex,
+      size,
+      price,
+    });
     const savedProduct = await product.save();
     return savedProduct;
   }

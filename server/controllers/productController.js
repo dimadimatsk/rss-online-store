@@ -3,8 +3,19 @@ const ProductService = require('../services/productService');
 class ProductController {
   async create(req, res, next) {
     try {
-      const { title, desc, img, categories, size, price } = req.body;
-      const productData = await ProductService.create(title, desc, img, categories, size, price);
+      const { id, title, brand, desc, chars, img, category, sex, size, price } = req.body;
+      const productData = await ProductService.create(
+        id,
+        title,
+        brand,
+        desc,
+        chars,
+        img,
+        category,
+        sex,
+        size,
+        price
+      );
       return res.json(productData);
     } catch (error) {
       next(error);
@@ -14,13 +25,16 @@ class ProductController {
   async update(req, res, next) {
     try {
       const id = req.params.id;
-      const { title, desc, img, categories, size, price } = req.body;
+      const { title, brand, desc, chars, img, categories, sex, size, price } = req.body;
       const updatedProduct = await ProductService.update(
         id,
         title,
+        brand,
         desc,
+        chars,
         img,
         categories,
+        sex,
         size,
         price
       );
@@ -49,7 +63,7 @@ class ProductController {
       next(error);
     }
   }
-  
+
   async getAllProducts(req, res, next) {
     try {
       const queryCategory = req.query.category;
