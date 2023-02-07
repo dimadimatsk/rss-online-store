@@ -1,0 +1,72 @@
+.container {
+  position: fixed;
+  top: 50%;
+  right: 0px;
+  left: 0px;
+  z-index: 60;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 30px 0px;
+  background: rgb(255, 255, 255);
+  width: 660px;
+  min-height: 266px;
+  transform: translate(0%, -50%);
+
+  .close {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    right: 20px;
+    border: none;
+    background-color: white;
+    display: flex;
+    padding: 0px;
+    z-index: 20;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 15px 0px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+.title {
+  margin-bottom: 15px;
+  font-size: 1.28571rem;
+  letter-spacing: 0.128571rem;
+  line-height: 26px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+
+  .subtitle {
+    font-size: 1.14286rem;
+    letter-spacing: 0.0228571rem;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: none;
+    margin-bottom: 20px;
+  }
+}
+
+label {
+  width: 100%;
+  font-size: 0.857143rem;
+  letter-spacing: 0.0857143rem;
+  line-height: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.firstDiv {
+}

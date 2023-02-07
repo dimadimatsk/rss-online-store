@@ -5,17 +5,23 @@ import {
   SearchOutlined,
   ShoppingCartOutlined,
 } from '@material-ui/icons';
-import React from 'react';
+import React, { useState } from 'react';
+import { AuthForm } from '../AuthForm/AuthForm';
 import style from './Navbar.module.scss';
 
 export const Navbar: React.FC = () => {
   const categories = ['clothing', 'footwear', 'accessories', 'lifestyle', 'gifts', 'sale'];
+  const [isShowedForm, setIsShowedForm] = useState(true);
+  const handleClick = () => {
+    setIsShowedForm(!isShowedForm);
+  };
 
   return (
     <div className={style.container}>
+      {isShowedForm && <AuthForm />}
       <div className={style.wrapper}>
         <div className={style.left}>
-          <div className={style.item}>
+          <div className={style.item} onClick={handleClick}>
             <PersonOutlineOutlined />
           </div>
         </div>
